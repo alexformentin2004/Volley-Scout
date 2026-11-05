@@ -1,0 +1,23 @@
+/* Beta 38 — statistics and history 2.0 */
+.vs38-visual{margin-top:18px;padding:17px;border:1px solid #e0e9fa;border-radius:19px;background:linear-gradient(145deg,#f8faff,#f1f5ff)}
+.vs38-chart-title{display:flex;align-items:center;gap:9px;color:#2948ac;font-weight:850;font-size:14px}
+.vs38-chart-row{display:grid;grid-template-columns:80px minmax(0,1fr) 32px;gap:9px;align-items:center;margin:13px 0;font-size:12px;color:#43536f}
+.vs38-chart-row strong{text-align:right;font-variant-numeric:tabular-nums}
+.vs38-track{height:11px;border-radius:10px;background:#e4eaf5;overflow:hidden}
+.vs38-fill{height:100%;border-radius:10px;background:#5b79e4}
+.vs38-fill-1{background:#24a77b}.vs38-fill-2{background:#9365cc}.vs38-fill-3{background:#e6a047}.vs38-fill-4{background:#df688d}.vs38-fill-5{background:#35a6c0}
+.vs38-ranking .vs38-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #e7ebf4;border-radius:14px}
+.vs38-ranking table th{background:#f1f5fc;white-space:nowrap;position:sticky;top:0;z-index:1}
+.vs38-ranking table td{white-space:nowrap}
+.vs38-ranking table tbody tr:nth-child(even){background:#f9fbff}
+.vs38-detail summary{padding:6px 2px;line-height:1.45}
+.vs38-detail[open]{border-color:#cbd8f7}
+.vs38-history-tools{padding:15px;border-radius:19px;background:#fff;border:1px solid #e4eaf6;box-shadow:0 3px 14px #243c6608;margin:0 0 15px}
+.vs38-history-tools label{display:block;font-weight:800;font-size:13px;color:#344b77}
+.vs38-history-tools input{margin:8px 0 5px}
+.vs38-history-count{font-size:11px;color:#72829a}
+.vs38-match-card{border-left:4px solid #a9b9ed!important}
+.vs38-match-card[hidden]{display:none!important}
+.vs38-match-card>details{border-top:1px solid #edf0f7;padding-top:4px}
+.vs38-match-card summary{min-height:36px}
+@media(max-width:390px){.vs38-chart-row{grid-template-columns:68px minmax(0,1fr) 25px;gap:6px;font-size:11px}.vs38-visual{padding:12px}}
