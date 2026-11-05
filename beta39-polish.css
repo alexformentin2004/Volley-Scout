@@ -1,0 +1,16 @@
+/* Beta 39 — readability, focus, and touch polish */
+:root{color-scheme:light}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #5376e6!important;outline-offset:3px}
+button:disabled{opacity:.5;cursor:not-allowed}
+#content button,#nav button{min-width:0}
+#content [hidden]{display:none!important}
+#content .card{overflow-wrap:break-word}
+#content .grid>button{overflow-wrap:anywhere}
+#content details>summary{cursor:pointer;list-style-position:inside}
+#content .vs38-history-tools input{width:100%;max-width:100%}
+#content .vs38-table-scroll{scrollbar-width:thin;scrollbar-color:#9baddb transparent}
+#content .vs38-ranking table td:first-child,#content .vs38-ranking table th:first-child{position:sticky;left:0;z-index:2;background:#f8faff}
+#content .vs38-ranking table th:first-child{z-index:3;background:#f1f5fc}
+#content[data-vs39-tab="Live"] .live-fund-first button{touch-action:manipulation}
+@media(max-width:420px){#content .card{max-width:100%}#content .vs38-ranking{overflow:hidden}#content .vs38-ranking .vs38-table-scroll{max-width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
