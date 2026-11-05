@@ -7,3 +7,11 @@ const b29OriginalStats=stats;
 stats=function(m){const html=b29OriginalStats(m),matches=m?[m]:db.matches;if(!matches.length)return html;const filter=statsSet==="all"?null:Number(statsSet);const block='<div class="card"><h3>Rotazioni · Side-out e Break Point</h3>'+b29Table(matches,filter)+'</div>';const pos=html.indexOf('</h1>');return pos>=0?html.slice(0,pos+5)+block+html.slice(pos+5):block+html};
 const b29OriginalReport=matchReportHTML;
 matchReportHTML=function(m,filter){const html=b29OriginalReport(m,filter),block='<section><h2>Side-out e Break Point per rotazione</h2>'+b29Table([m],filter)+'</section>';return html.replace('<section><h2>05 · Rendimento per rotazione</h2>',JSON.stringify(block).slice(1,-1)+'<section><h2>05 · Rendimento per rotazione</h2>')};
+
+function b29ExportRows(m,filter){return [["Rotazione","Scambi","Side-out vinti","Scambi in ricezione","Side-out %","Break vinti","Scambi in battuta","Break %","Punti vinti","Punti persi","Differenziale"],...b29Totals([m],filter).map(x=>[ "P"+x.rot,x.n,x.so,x.receive,b29Pct(x.so,x.receive),x.bp,x.serve,b29Pct(x.bp,x.serve),(x.n+x.diff)/2,(x.n-x.diff)/2,x.diff])]}
+const b29OriginalSections=reportSections;
+reportSections=function(m,filter){const sections=b29OriginalSections(m,filter);sections.push(["Side-out Break",b29ExportRows(m,filter)]);return sections};
+const b29OriginalCSV=matchCSV;
+matchCSV=function(m){const base=b29OriginalCSV(m);return base+"\r\n\r\n"+b29ExportRows(m,null).map(row=>row.map(csvCell).join(";")).join("\r\n")};
+const b29OriginalBind=bind;
+bind=function(){b29OriginalBind();document.querySelectorAll("[data-report]").forEach(btn=>{const old=btn.onclick;btn.onclick=()=>{const m=db.matches.find(x=>x.id===btn.dataset.report);if(!m)return old?.();const rows=b29ExportRows(m,null);const summary="ROTazioni / SIDE-OUT / BREAK POINT\n"+rows.map(row=>row.join(" | ")).join("\n");const acts=m.events.filter(e=>e.type==="action"),count=(f,q)=>acts.filter(e=>e.fundamental===f&&e.quality===q).length;const textReport="REPORT VOLLEY SCOUT\n"+(team(m.teamId)?.name||"Squadra")+" vs "+m.opponent+"\nAzioni: "+acts.length+"\nAttacchi punto: "+count("Attacco","#")+"\nAce: "+count("Battuta","#")+"\nMuri punto: "+count("Muro","#")+"\n\n"+summary;downloadText("report-"+m.id.slice(0,8)+".txt",textReport,"text/plain;charset=utf-8")}})};
