@@ -1,4 +1,4 @@
-const CACHE="volley-scout-v35-1";const ASSETS=["./index.html","./app-v28-3.js?v=28-4","./beta29-analytics.js?v=29-3","./beta30-sequences.js?v=30-1","./beta32-xlsx.js?v=32-1","./beta32-pdf.js?v=32-2","./beta34-iphone.js?v=34-1","./beta35-premium.css?v=35-1","./manifest.webmanifest","./icon.svg"];
+const CACHE="volley-scout-v35-2";const ASSETS=["./index.html","./app-v28-3.js?v=28-4","./beta29-analytics.js?v=29-3","./beta30-sequences.js?v=30-1","./beta32-xlsx.js?v=32-1","./beta32-pdf.js?v=32-2","./beta34-iphone.js?v=34-1","./beta35-premium.css?v=35-1","./beta35-graphics.css?v=35-2","./beta35-graphics.js?v=35-2","./manifest.webmanifest","./icon.svg"];
 self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)))});
 self.addEventListener("message",event=>{if(event.data?.type==="SKIP_WAITING")self.skipWaiting()});
 self.addEventListener("activate",event=>{event.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.filter(key=>key.startsWith("volley-scout-")&&key!==CACHE).map(key=>caches.delete(key)));await self.clients.claim()})())});
