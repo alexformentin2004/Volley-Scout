@@ -1,0 +1,15 @@
+/* Beta 35.3: role-coded player cards, high-contrast at a glance */
+#content .court .six{gap:9px}
+#content .court .vs-player-zone{position:relative;min-height:148px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:10px 5px 11px;line-height:1.16;font-size:13px;overflow:hidden;border:2px solid var(--role-border,#cbd5e1);background:linear-gradient(160deg,#fff 20%,var(--role-bg,#eef2f7));color:#26364e;box-shadow:0 3px 10px #18243a16}
+#content .court .vs-player-zone::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--role-accent,#94a3b8)}
+#content .court .vs-player-zone .vs-zone-label{font-size:10px;color:#66758b;font-weight:750;letter-spacing:.03em}
+#content .court .vs-role-badge{order:-1;display:inline-flex;align-items:center;justify-content:center;gap:3px;border-radius:9px;background:var(--role-accent,#64748b);color:#fff;font-size:13px;font-weight:900;min-width:43px;height:28px;box-shadow:0 2px 7px #15243a18}
+#content .court .vs-role-name{font-size:10px;line-height:1.15;font-weight:850;color:var(--role-text,#475569);overflow-wrap:anywhere;max-width:100%}
+#content .court .vs-role-banda{--role-accent:#cf4e85;--role-bg:#ffe6f1;--role-border:#f2a4c5;--role-text:#9d315d}
+#content .court .vs-role-opposto{--role-accent:#d7772b;--role-bg:#fff0d9;--role-border:#f2bf8b;--role-text:#a45316}
+#content .court .vs-role-centrale{--role-accent:#188d84;--role-bg:#dff8f2;--role-border:#8ad6c8;--role-text:#087269}
+#content .court .vs-role-palleggiatore{--role-accent:#5b60d6;--role-bg:#e8e9ff;--role-border:#b1b7f4;--role-text:#434bb3}
+#content .court .vs-role-libero{--role-accent:#7c49b7;--role-bg:#f0e3ff;--role-border:#c7a4e9;--role-text:#6b329e}
+#content .court .vs-role-altro{--role-accent:#64748b;--role-bg:#f1f5f9;--role-border:#cbd5e1;--role-text:#475569}
+#content .court .vs-player-zone:active{transform:scale(.965)}
+@media(max-width:390px){#content .court .six{gap:6px}#content .court .vs-player-zone{min-height:137px;font-size:12px;padding:9px 3px}#content .court .vs-role-name{font-size:9px}#content .court .vs-role-badge{min-width:37px;height:26px}}
