@@ -1,0 +1,41 @@
+/* Volley Scout Beta 35 — premium visual design system, mobile-first */
+:root{color-scheme:light;--vs-ink:#17253d;--vs-muted:#66768f;--vs-blue:#3655df;--vs-line:#e6ebf3;--vs-surface:#fff;--vs-bg:#f2f5fb;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;background:var(--vs-bg);-webkit-font-smoothing:antialiased}
+html{background:var(--vs-bg);scrollbar-gutter:stable}
+body{color:var(--vs-ink);background:radial-gradient(ellipse 75% 360px at 50% -150px,#dfe8ff 0%,transparent 100%),var(--vs-bg);min-height:100dvh}
+.app{max-width:640px;padding:20px 16px calc(112px + env(safe-area-inset-bottom));min-height:100dvh}
+.top{margin:2px 0 23px;align-items:center;gap:12px}
+.brand{font-size:24px;letter-spacing:-.85px;font-weight:850;color:#182844}
+.tag{background:#e9edff;color:#3452c4;border:1px solid #dce4ff;box-shadow:0 2px 8px #263ba00b;padding:7px 11px;font-size:11px;letter-spacing:.1px}
+.title{font-size:27px;letter-spacing:-.95px;line-height:1.18;color:#1b2944;margin-bottom:14px}
+h3{color:#1c2c47;letter-spacing:-.35px;font-size:16px}
+.card{border:1px solid #e8edf6;background:#fff;border-radius:24px;padding:20px;box-shadow:0 5px 24px #1c31510a,0 1px 2px #1c315107;margin-bottom:14px}
+.card .card{background:#f8faff;box-shadow:none;border-color:#e9eef7}
+.muted{color:var(--vs-muted)}
+.item{background:#f5f7fc;border:1px solid #e9edf5;border-radius:15px;padding:13px}
+.list{gap:10px}
+input,select,textarea{background:#f7f9fd;border:1px solid #dfe6f1;border-radius:15px;color:#20304b;min-height:46px;outline:none;box-shadow:inset 0 1px 1px #1c315106}
+input:focus,select:focus,textarea:focus{border-color:#8298f1;box-shadow:0 0 0 3px #5274e61b}
+button{font-weight:740;letter-spacing:-.1px;-webkit-tap-highlight-color:transparent}
+.primary{background:linear-gradient(145deg,#4664ed,#3048cc);border:1px solid #3049cf;color:#fff;box-shadow:0 5px 12px #3048c524;border-radius:15px;min-height:48px}
+.secondary{background:#eef2fb;color:#354a70;border:1px solid #e2e8f5;border-radius:15px;min-height:45px}
+.pill{background:#ecf1ff;color:#3852a4;border:1px solid #dce5ff;border-radius:13px}
+.danger{background:#ffebec;color:#b43145;border-color:#ffd6db}
+.fund{border-radius:20px;box-shadow:0 3px 10px #14213b09;border-width:1px;min-height:88px;letter-spacing:-.2px}
+.zone{border-radius:18px;border:1px solid #e9d9c9;box-shadow:0 2px 9px #55330d09}
+.court{border-radius:20px;border:1px solid #dcb18e;box-shadow:inset 0 1px 0 #ffffff65}
+.quality{border-radius:19px;box-shadow:0 3px 12px #17233b0a,inset 0 -3px 0 #0000000b;min-height:94px}
+.quality strong{letter-spacing:-.6px}
+.suggest{border-radius:22px;box-shadow:0 5px 16px #19714b14}
+.score{font-variant-numeric:tabular-nums;letter-spacing:-1.5px}
+.nav{background:#fffffff2;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-top:1px solid #e5eaf5;box-shadow:0 -8px 26px #243c660a;padding:8px 8px calc(8px + env(safe-area-inset-bottom))}
+.navinner{width:min(640px,100%);gap:3px}
+.nav button{border-radius:15px;min-height:56px;padding:8px 3px 6px;color:#8290a8;font-size:10px;font-weight:750;line-height:1.25}
+.nav button.active{background:#edf1ff;color:#3655d8}
+.nav b{font-size:21px;margin-bottom:4px;line-height:1.1}
+table{border-collapse:collapse}
+th{color:#50617e}
+td,th{font-variant-numeric:tabular-nums}
+button:focus-visible{outline:3px solid #7891ee;outline-offset:2px}
+@media(hover:hover){.primary:hover{filter:brightness(1.045)}.secondary:hover,.item:hover{background:#e9eef9}.nav button:hover{color:#3655d8}}
+@media(max-width:390px){.app{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}.card{padding:16px;border-radius:20px}.brand{font-size:21px}.title{font-size:24px}.fund{min-height:84px}.nav button{font-size:9px}.tag{font-size:10px;padding:6px 9px}}
+@media(prefers-reduced-motion:reduce){button,.card{transition:none!important}}
