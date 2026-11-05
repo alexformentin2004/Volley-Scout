@@ -6,4 +6,4 @@ function b29Table(matches,filter){return '<div style="overflow-x:auto"><table st
 const b29OriginalStats=stats;
 stats=function(m){const html=b29OriginalStats(m),matches=m?[m]:db.matches;if(!matches.length)return html;const filter=statsSet==="all"?null:Number(statsSet);const block='<div class="card"><h3>Rotazioni · Side-out e Break Point</h3>'+b29Table(matches,filter)+'</div>';const pos=html.indexOf('</h1>');return pos>=0?html.slice(0,pos+5)+block+html.slice(pos+5):block+html};
 const b29OriginalReport=matchReportHTML;
-matchReportHTML=function(m,filter){const html=b29OriginalReport(m,filter),block='<section><h2>Side-out e Break Point per rotazione</h2>'+b29Table([m],filter)+'</section>';return html.replace('<section><h2>05 · Rendimento per rotazione</h2>',block+'<section><h2>05 · Rendimento per rotazione</h2>')};
+matchReportHTML=function(m,filter){const html=b29OriginalReport(m,filter),block='<section><h2>Side-out e Break Point per rotazione</h2>'+b29Table([m],filter)+'</section>';return html.replace('<section><h2>05 · Rendimento per rotazione</h2>',JSON.stringify(block).slice(1,-1)+'<section><h2>05 · Rendimento per rotazione</h2>')};
