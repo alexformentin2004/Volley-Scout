@@ -25,6 +25,7 @@ function enhance(){
   if(!b.hasAttribute("aria-label")&&!b.textContent.trim())b.setAttribute("aria-label",b.title||"Comando");
  });
  root.querySelectorAll("details").forEach(d=>{const summary=d.querySelector(":scope > summary");if(summary)summary.setAttribute("role","button")});
+ if(current!==previousTab&&current!=="Storico")historyQuery="";
  if(current==="Storico"){
   const search=root.querySelector("#vs38-history-search");
   if(search){
@@ -33,7 +34,6 @@ function enhance(){
    search.addEventListener("input",()=>{historyQuery=search.value},{passive:true});
   }
  }
- if(current!==previousTab)historyQuery="";
  previousTab=current;
 }
 render=function(){
