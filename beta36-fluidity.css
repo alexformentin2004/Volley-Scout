@@ -1,0 +1,18 @@
+/* Beta 36: native-feeling lightweight interaction, no animations during action recording */
+html{overscroll-behavior-y:none}
+body{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+#content{contain:layout style}
+#content.vs36-enter{animation:vs36-in .19s cubic-bezier(.2,.75,.25,1) both}
+@keyframes vs36-in{from{opacity:.65;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+button,.nav button{touch-action:manipulation;user-select:none;-webkit-user-select:none}
+button:not(:disabled){transition:transform .12s ease,filter .12s ease,background-color .15s ease}
+button:not(:disabled):active{transform:scale(.975)}
+.nav button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px}
+.nav button.active{box-shadow:inset 0 0 0 1px #dce4ff}
+.nav button.vs36-pressed{transform:scale(.93)}
+.nav button[aria-current="page"]{color:#304ed5}
+.nav .vs-nav-svg{flex:none}
+.card{content-visibility:visible}
+#content.vs-live .fund,#content.vs-live .quality,#content.vs-live .zone{transition:transform .08s ease}
+input,select,textarea{touch-action:manipulation}
+@media(prefers-reduced-motion:reduce){#content.vs36-enter{animation:none!important}button,.nav button{transition:none!important}}
