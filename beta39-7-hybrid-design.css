@@ -1,0 +1,106 @@
+/* Volley Scout Beta 39.7 — Hybrid Premium / Sport design system.
+   Visual-only release: no data, navigation, scouting or export logic changed. */
+:root{
+ color-scheme:light;
+ --vs97-bg:#edf2fa;--vs97-surface:#ffffff;--vs97-surface-soft:#f6f8fd;
+ --vs97-ink:#14213b;--vs97-muted:#65748d;--vs97-border:#dfe6f2;
+ --vs97-blue:#3154e5;--vs97-blue-dark:#243ca9;--vs97-accent:#12a87d;
+ --vs97-shadow:0 14px 38px rgba(24,45,87,.075),0 2px 7px rgba(24,45,87,.035);
+ --vs97-radius:24px;
+}
+html{background:var(--vs97-bg)}
+body{
+ color:var(--vs97-ink);
+ background:radial-gradient(ellipse 85% 330px at 12% -130px,#d5e3ff 0%,transparent 100%),
+ radial-gradient(ellipse 75% 300px at 110% 120px,#e4efff 0%,transparent 100%),
+ var(--vs97-bg);
+}
+.app{max-width:640px;padding-top:22px}
+.top{margin:0 0 26px;padding:8px 3px 13px;gap:12px;align-items:center}
+.brand{font-size:24px;font-weight:850;letter-spacing:-1.15px;color:#152545}
+.tag{border:1px solid #d5e1fb;background:#e9efff;color:#3153aa;box-shadow:none;font-weight:800;letter-spacing:.01em;padding:8px 11px}
+.title{font-size:clamp(25px,5.7vw,30px);line-height:1.12;letter-spacing:-1.1px;color:#142440;margin-bottom:11px}
+h3{font-size:16px;font-weight:800;color:#1b2d4c;letter-spacing:-.3px}
+.muted{color:var(--vs97-muted);line-height:1.5}
+.card{
+ background:var(--vs97-surface);
+ border:1px solid var(--vs97-border);
+ border-radius:var(--vs97-radius);
+ box-shadow:var(--vs97-shadow);
+ padding:20px;
+ margin-bottom:16px;
+}
+.card .card{background:var(--vs97-surface-soft);border-color:#e4ebf7;box-shadow:none}
+.item{background:#f5f8fd;border:1px solid #e3eaf6;border-radius:16px;padding:14px}
+.pill{background:#eaf0ff;border:1px solid #dce5fc;color:#294da5;border-radius:12px}
+.primary,.secondary{border-radius:16px;font-weight:800;min-height:49px;transition:background-color .14s ease,box-shadow .14s ease,transform .1s ease}
+.primary{
+ background:linear-gradient(135deg,#456bf0 0%,#2d4ed7 70%,#243cb7 100%);
+ border:1px solid #294bd0;
+ color:#fff;
+ box-shadow:0 7px 17px rgba(45,79,215,.22);
+}
+.secondary{background:#edf2fb;color:#29446e;border:1px solid #dce5f3;box-shadow:none}
+.danger{background:#fff0f0;color:#a92e44;border-color:#f8d6de;box-shadow:none}
+input,select,textarea{background:#f7f9fd;color:#182c4b;border:1px solid #d9e3f1;border-radius:15px;box-shadow:none}
+input:focus,select:focus,textarea:focus{border-color:#5b7be8;box-shadow:0 0 0 4px #4b6ee61a}
+#content details{min-width:0}
+#content details>summary{padding:9px 3px;line-height:1.5;font-weight:750}
+#content details[open]>summary{color:#3153b3}
+#content .grid{gap:11px}
+#content .row{gap:12px}
+#content .list{gap:10px}
+.nav{
+ background:rgba(255,255,255,.94);
+ -webkit-backdrop-filter:blur(22px);backdrop-filter:blur(22px);
+ border-top:1px solid #dfe6f2;
+ box-shadow:0 -10px 32px rgba(25,46,90,.08);
+}
+.navinner{gap:5px}
+.nav button{color:#75849e;font-weight:800;border-radius:16px;min-height:58px;transition:background-color .14s,color .14s}
+.nav button.active{background:#e8efff;color:#2a4dd3;box-shadow:inset 0 0 0 1px #d8e4ff}
+.nav .vs-nav-svg{width:23px;height:23px}
+.vs-title-icon{border-radius:15px;box-shadow:none;border-color:#d8e4fb}
+.vs-section-subtitle{color:#627592}
+#content[data-vs39-tab="Live"] .card{
+ border-color:#d8e3f4;
+ box-shadow:0 12px 32px rgba(27,51,98,.085),0 2px 6px rgba(27,51,98,.04)
+}
+#content[data-vs39-tab="Live"] .live-fund-first{
+ background:linear-gradient(165deg,#fff 10%,#f3f7ff 100%);
+ border:1px solid #cad9f4;
+}
+#content[data-vs39-tab="Live"] .vs37-step{
+ background:#e7efff;border:1px solid #cddcf9;color:#24478c;border-radius:13px
+}
+#content[data-vs39-tab="Live"] .vs37-step-number{background:#2d4fd0}
+#content[data-vs39-tab="Live"] .vs-fund-art{
+ border-radius:20px;box-shadow:0 3px 12px rgba(26,44,80,.08);
+ border:1px solid rgba(45,72,120,.09);
+}
+#content[data-vs39-tab="Live"] .vs-fund-icon{border-radius:17px}
+#content[data-vs39-tab="Live"] .vs37-scoreboard{
+ background:linear-gradient(150deg,#f0f5ff,#fff 60%);
+ border:1px solid #d1dff5;
+}
+#content[data-vs39-tab="Live"] .score{font-variant-numeric:tabular-nums;color:#173d9a}
+#content[data-vs39-tab="Live"] .vs37-quality{border-radius:19px;box-shadow:0 4px 11px rgba(20,35,65,.08),inset 0 -3px 0 #00000010}
+#content[data-vs39-tab="Live"] .quality-excellent{background:#3ee782;color:#064b2a;border-color:#14a65c}
+#content[data-vs39-tab="Live"] .quality-positive{background:#a6efc0;color:#145a32;border-color:#70d49c}
+#content[data-vs39-tab="Live"] .quality-neutral{background:#ffe179;color:#755006;border-color:#e9b935}
+#content[data-vs39-tab="Live"] .quality-negative{background:#ffc08a;color:#873707;border-color:#f3964c}
+#content[data-vs39-tab="Live"] .quality-error{background:#ff9fa5;color:#8b1728;border-color:#e85a69}
+#content[data-vs39-tab="Live"] .suggest{background:linear-gradient(145deg,#d5f9e9,#c1efd9);color:#0b6b46;border:1px solid #99e1c1}
+#content[data-vs39-tab="Statistiche"] .card,#content[data-vs39-tab="Storico"] .card{border-left:1px solid var(--vs97-border)}
+#content[data-vs39-tab="Statistiche"] table{font-variant-numeric:tabular-nums}
+#content[data-vs39-tab="Statistiche"] th{background:#eff4fd;color:#2b4166}
+#content[data-vs39-tab="Statistiche"] td{border-color:#e5ebf4}
+#content[data-vs39-tab="Storico"] .card>details{border-top:1px solid #edf1f8}
+#content[data-vs39-tab="Storico"] .card>details:first-of-type{border-top:0}
+@media(max-width:390px){
+ .app{padding-top:14px}.top{margin-bottom:20px}.brand{font-size:22px}
+ .card{padding:15px;border-radius:21px}.title{font-size:25px}
+ .navinner{gap:2px}.nav button{border-radius:12px}
+ #content[data-vs39-tab="Live"] .vs-fund-art{border-radius:16px}
+}
+@media(prefers-reduced-motion:reduce){.primary,.secondary,.nav button{transition:none!important}}
