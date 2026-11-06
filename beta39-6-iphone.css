@@ -1,0 +1,18 @@
+/* Beta 39.6 — Safari/iPhone final ergonomic pass */
+html{scroll-padding-bottom:calc(94px + env(safe-area-inset-bottom,0px));-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{min-width:0;overflow-x:hidden}
+.app{width:100%;max-width:620px;min-width:0;padding-bottom:calc(108px + env(safe-area-inset-bottom,0px))}
+#content{min-width:0}
+#content .card{min-width:0;max-width:100%}
+#content input:not([type=file]),#content select,#content textarea{font-size:16px!important;max-width:100%;min-height:46px}
+#content button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+#content .vs396-touch{min-height:52px;user-select:none;-webkit-user-select:none}
+#content button:focus-visible,#nav button:focus-visible,#content summary:focus-visible{outline:3px solid #496be2!important;outline-offset:2px}
+#content .vs392-scroll,#content .vs38-table-scroll{overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.nav{padding-bottom:env(safe-area-inset-bottom,0px)}
+.navinner{min-width:0}
+.nav button{min-height:50px;touch-action:manipulation}
+.vs396-keyboard-open .nav{transform:translateY(calc(var(--vs396-keyboard,0px)));pointer-events:none}
+@media(max-width:390px){.app{padding-left:max(11px,env(safe-area-inset-left,0px));padding-right:max(11px,env(safe-area-inset-right,0px))}.vs37-live .vs37-scoreboard .grid>button{min-height:52px}#content .card{padding-left:13px;padding-right:13px}.nav button{font-size:11px}}
+@media(orientation:landscape) and (max-height:500px){.app{padding-bottom:90px}.nav button{min-height:44px}.vs37-live .vs-fund-art{min-height:85px!important}}
+@media(prefers-reduced-motion:reduce){.vs396-keyboard-open .nav{transition:none!important}}
