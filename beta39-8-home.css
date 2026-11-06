@@ -1,0 +1,33 @@
+/* Beta 39.8 — visible Home and navigation redesign, Hybrid C */
+#content.vs398-home{padding-top:2px}
+.vs398-eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:10px;font-weight:900;letter-spacing:.17em;color:#3155b7;margin:2px 0 12px}
+.vs398-eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:#2ac38f;box-shadow:0 0 0 4px #2ac38f24}
+.vs398-home>.title{font-size:clamp(29px,7vw,37px);max-width:480px;letter-spacing:-1.55px;line-height:1.07;margin-bottom:10px}
+.vs398-home>.title+.muted{font-size:14px;max-width:430px;margin:0 0 24px;line-height:1.6}
+.vs398-home>.card{position:relative;overflow:hidden}
+.vs398-card-kicker{display:block;color:#58739c;font-size:10px;letter-spacing:.13em;font-weight:900;margin-bottom:10px}
+.vs398-card-title{font-size:19px;letter-spacing:-.65px;margin-bottom:17px}
+.vs398-active-match{background:linear-gradient(140deg,#172d62 0%,#2448a0 70%,#365bd0 100%)!important;color:#fff;border-color:#294caa!important;box-shadow:0 15px 35px #1d3d9038!important;padding:23px!important}
+.vs398-active-match:after{content:"";position:absolute;width:190px;height:190px;border:1px solid #ffffff23;border-radius:50%;top:-100px;right:-80px;pointer-events:none}
+.vs398-active-match h3,.vs398-active-match b{color:#fff}
+.vs398-active-match .tag{background:#ffffff20;border-color:#ffffff40;color:#fff}
+.vs398-active-match .vs398-home-score{font-size:clamp(44px,12vw,62px);color:#fff;line-height:1.1;letter-spacing:-2.5px;margin:17px 0 22px}
+.vs398-active-match .vs398-continue{background:#fff;color:#2346a2;border-color:#fff;box-shadow:none;min-height:56px;font-size:15px}
+.vs398-create-match{padding:23px!important;background:linear-gradient(180deg,#fff,#fbfcff)!important}
+.vs398-create-match:before{content:"";display:block;width:46px;height:5px;background:linear-gradient(90deg,#3154e5,#2bc79b);border-radius:20px;margin:0 0 21px}
+.vs398-create-match .vs398-field-label{display:block;font-size:12px;font-weight:850;color:#34496d;letter-spacing:.015em;margin:14px 0 4px}
+.vs398-create-match .vs398-field{border-radius:15px;background:#f5f8fe;border:1px solid #dce6f5;min-height:51px;margin:3px 0 9px;font-weight:650;color:#1c3154}
+.vs398-create-match .vs398-start{margin-top:16px;min-height:58px;border-radius:17px;font-size:16px;letter-spacing:-.2px}
+.vs398-create-match .vs398-start:disabled{box-shadow:none}
+.vs398-create-match .muted.small{background:#eef4ff;border:1px solid #e0eafb;border-radius:12px;padding:10px 12px;font-size:12px}
+.nav{padding-top:10px}
+.navinner{gap:6px}
+.nav .vs398-nav-item{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:3px;border-radius:17px;min-height:62px;padding:7px 3px;color:#72819a;font-size:10px;letter-spacing:-.1px}
+.nav .vs398-nav-item.active{background:#eaf0ff;color:#2b4ec8;box-shadow:inset 0 0 0 1px #d8e4fd}
+.nav .vs398-nav-item.active:before{content:"";position:absolute;top:2px;width:19px;height:3px;background:#3c60e7;border-radius:9px}
+.nav .vs398-nav-label{display:block;font-weight:800;line-height:1.1}
+.nav .vs398-nav-item .vs-nav-svg{margin:0 auto 2px}
+.nav .vs398-nav-live:not(.active){color:#2d50c5}
+.nav .vs398-nav-live:not(.active) .vs-nav-svg{background:#e9efff;border-radius:11px;padding:3px;width:30px;height:30px}
+@media(max-width:390px){.vs398-home>.title{font-size:29px}.vs398-active-match,.vs398-create-match{padding:18px!important}.navinner{gap:2px}.nav .vs398-nav-item{min-height:58px;font-size:9px;border-radius:12px}}
+@media(prefers-reduced-motion:reduce){.vs398-home *,.nav .vs398-nav-item{transition:none!important}}
