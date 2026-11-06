@@ -1,0 +1,75 @@
+/* Beta 39.9 — Live Arena: high-contrast sports interface on premium foundation */
+#content.vs399-arena{--arena-navy:#172c57;--arena-blue:#3157cf;--arena-line:#d9e4f7}
+#content.vs399-arena>.card{margin-bottom:14px}
+#content.vs399-arena .vs399-action-panel{
+ background:linear-gradient(155deg,#ffffff 0%,#f7faff 78%,#eef4ff 100%);
+ border:1px solid #cbdaf4;border-radius:26px;
+ box-shadow:0 15px 36px #213e7516;
+ padding:18px;
+}
+#content.vs399-arena .vs399-stage{border:0;background:#e9f0ff;padding:9px 11px;border-radius:13px;margin-bottom:16px}
+#content.vs399-arena .vs399-stage .vs37-step-number{background:#2f54cc;border-radius:9px}
+#content.vs399-arena .vs399-stage .vs37-step-caption{font-size:12px;font-weight:900;color:#24468e}
+#content.vs399-arena .vs399-action-heading{font-size:20px;line-height:1.2;letter-spacing:-.6px;margin:2px 0 14px;color:#162b51}
+#content.vs399-arena .vs399-menu-hint{margin:-5px 0 16px;color:#647899;font-size:12px;line-height:1.4}
+#content.vs399-arena .vs399-action-panel>.grid{gap:11px}
+#content.vs399-arena .vs399-fund{
+ min-height:120px!important;border-radius:20px;
+ border:1px solid #ffffffb0;
+ box-shadow:0 5px 14px #223b6614,inset 0 1px 0 #ffffff90;
+ font-size:15px!important;font-weight:850;
+ padding:12px 8px!important;gap:8px;
+}
+#content.vs399-arena .vs399-fund .vs-fund-icon{width:52px;height:52px;border-radius:17px}
+#content.vs399-arena .vs399-fund .vs-fund-svg{width:32px;height:32px}
+#content.vs399-arena .vs399-quality{
+ min-height:112px!important;border-radius:20px;
+ border-width:2px;box-shadow:0 6px 15px #20375f18,inset 0 -4px 0 #00000010;
+ font-size:14px;font-weight:800;
+}
+#content.vs399-arena .vs399-quality strong{font-size:36px;line-height:1.05;letter-spacing:-1px}
+#content.vs399-arena .quality-excellent{background:#35e580;color:#064a2b;border-color:#16b463}
+#content.vs399-arena .quality-positive{background:#9af0b9;color:#135b35;border-color:#64d895}
+#content.vs399-arena .quality-neutral,#content.vs399-arena .quality-easy{background:#ffe181;color:#77500a;border-color:#e6b940}
+#content.vs399-arena .quality-negative{background:#ffb77b;color:#853707;border-color:#f18d42}
+#content.vs399-arena .quality-error{background:#ff929b;color:#8c1728;border-color:#e85668}
+#content.vs399-arena .vs399-scoreboard{
+ background:linear-gradient(145deg,#1a315f,#254995 75%,#3156ae)!important;
+ border:1px solid #24468e!important;border-radius:26px;
+ box-shadow:0 16px 35px #1b37783b!important;color:#fff;
+ padding:19px;
+}
+#content.vs399-arena .vs399-scoreboard .muted{color:#cbd8f3}
+#content.vs399-arena .vs399-scoreboard .tag{color:#fff;background:#ffffff22;border-color:#ffffff3d}
+#content.vs399-arena .vs399-match-meta{padding-bottom:12px;border-bottom:1px solid #ffffff20;margin-bottom:11px}
+#content.vs399-arena .vs399-scoreboard .vs399-score-number{color:#fff;font-size:clamp(46px,12vw,62px);font-weight:950;line-height:1.05;letter-spacing:-2px}
+#content.vs399-arena .vs399-scoreboard .row:has(.score){padding:12px 4px 17px;border-bottom:1px solid #ffffff23;margin-bottom:14px}
+#content.vs399-arena .vs399-point-button{min-height:62px;font-size:15px;font-weight:900;border:1px solid transparent;border-radius:16px}
+#content.vs399-arena #point-us{background:#bff3d7;color:#09613c;border-color:#7edcaf}
+#content.vs399-arena #point-them{background:#ffd8dd;color:#9d233b;border-color:#f4aab5}
+#content.vs399-arena .vs399-tools{gap:7px;margin-top:14px!important}
+#content.vs399-arena .vs399-tools button{
+ flex:1 1 auto;min-height:44px;padding:10px 11px;border-radius:12px;
+ background:#ffffff17;color:#fff;border:1px solid #ffffff2b;
+ font-size:12px;font-weight:800;box-shadow:none;
+}
+#content.vs399-arena .vs399-tools button:active{background:#ffffff30}
+#content.vs399-arena .vs399-tools .vs37-tool-icon{font-size:17px}
+#content.vs399-arena .vs399-activity{border-radius:23px;background:#fff}
+#content.vs399-arena .vs399-activity h3{font-size:16px}
+#content.vs399-arena .vs399-activity .item{border-left:3px solid #7897df;background:#f5f8fe}
+#content.vs399-arena .court{background:linear-gradient(160deg,#f0bd90,#e4a976);border:2px solid #d9975f;border-radius:21px;padding:14px}
+#content.vs399-arena .net{height:6px;background:#fff;box-shadow:0 2px 7px #75401d25}
+#content.vs399-arena .vs399-court-player{border:1px solid #f5e3d1;background:#fffaf5;min-height:100px;border-radius:15px;color:#56381e}
+#content.vs399-arena .vs391-player{border-radius:16px}
+#content.vs399-arena .suggest{background:linear-gradient(145deg,#c5f5de,#a9e9cc);border:1px solid #78d8a8;color:#0c6844;box-shadow:0 6px 16px #1b79552a}
+@media(max-width:390px){
+ #content.vs399-arena .vs399-action-panel,#content.vs399-arena .vs399-scoreboard{padding:14px;border-radius:21px}
+ #content.vs399-arena .vs399-fund{min-height:104px!important;border-radius:16px}
+ #content.vs399-arena .vs399-fund .vs-fund-icon{width:43px;height:43px}
+ #content.vs399-arena .vs399-quality{min-height:98px!important}
+ #content.vs399-arena .vs399-quality strong{font-size:32px}
+ #content.vs399-arena .vs399-tools button{font-size:11px;padding:8px}
+ #content.vs399-arena .vs399-court-player{min-height:88px}
+}
+@media(prefers-reduced-motion:reduce){#content.vs399-arena button{transition:none!important}}
