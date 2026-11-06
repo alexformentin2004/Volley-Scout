@@ -1,0 +1,7 @@
+/* Beta 39.13 — data safety controls within History backup */
+#content .vs3913-safety{margin-top:17px;padding:16px;border:1px solid #d2e2f3;background:linear-gradient(145deg,#f6faff,#edf5ff);border-radius:18px}
+#content .vs3913-safety h4{margin:0 0 10px;font-size:15px;letter-spacing:-.2px;color:#1e3f78}
+#content .vs3913-status{margin:0 0 9px;padding:10px 12px;border:1px solid #cce7dc;background:#e9f8f0;border-radius:12px;font-size:12px;font-weight:800;color:#176345;line-height:1.45}
+#content .vs3913-status.vs3913-warning{background:#fff0ed;border-color:#f5b8af;color:#a13230}
+#content .vs3913-safety .muted{margin:8px 0 12px;line-height:1.55}
+#content .vs3913-emergency{min-height:50px;border-radius:14px;background:#fff;color:#274d9a;border:1px solid #c8d9f2;font-weight:850}
