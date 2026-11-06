@@ -1,0 +1,6 @@
+/* Beta 39.3 correction history */
+.vs393-controls{padding:12px;margin:10px 0;border-radius:15px;background:#f3f6fd;border:1px solid #dfe7f8}
+.vs393-controls input,.vs393-controls select{font-size:14px;background:#fff;margin:6px 0}
+.vs393-controls p{margin:4px 0 8px;line-height:1.5}
+.vs393-controls~.item{border-left:3px solid #bac9ec}
+.vs393-controls~.item[hidden]{display:none!important}
