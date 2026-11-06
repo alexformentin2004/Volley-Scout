@@ -1,0 +1,37 @@
+/* Beta 39.10 — Statistics Studio: editorial KPI dashboard and professional analysis */
+#content.vs3910-studio{--stats-ink:#172c55;--stats-blue:#3154d5;--stats-line:#dfe7f5}
+#content.vs3910-studio>.title{font-size:clamp(28px,6.8vw,35px);letter-spacing:-1.25px;margin-bottom:18px}
+#content.vs3910-studio>.card{border:1px solid #dce5f3;box-shadow:0 10px 28px #203c7510;border-radius:23px}
+#content.vs3910-studio .vs3910-filter{background:linear-gradient(145deg,#f8fbff,#edf4ff);border-color:#d3e0f6}
+#content.vs3910-studio .vs3910-filter select{background:#fff;border-color:#cfddf1;font-weight:800;min-height:53px}
+#content.vs3910-studio .vs3910-overview{background:linear-gradient(155deg,#fff 40%,#f5f8ff);padding:20px}
+#content.vs3910-studio .vs3910-overview-label{font-size:10px;font-weight:900;letter-spacing:.15em;color:#3b61b8;margin:0 0 10px}
+#content.vs3910-studio .vs3910-overview h3{font-size:20px;letter-spacing:-.6px;margin-bottom:18px}
+#content.vs3910-studio .vs3910-overview>.grid{gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+#content.vs3910-studio .vs3910-kpi{position:relative;display:flex;flex-direction:column;justify-content:center;gap:7px;min-height:104px;padding:15px;background:#f2f6fd;border:1px solid #e1e9f7;border-radius:18px;color:#465b7c;font-size:12px;line-height:1.35;font-weight:700}
+#content.vs3910-studio .vs3910-kpi-value{display:block!important;font-size:clamp(24px,6vw,32px)!important;line-height:1.05;letter-spacing:-1px;color:#1c376c;font-weight:900}
+#content.vs3910-studio .vs3910-kpi-featured{background:linear-gradient(145deg,#1d376f,#2e57ba);border-color:#2d51aa;color:#e5edff;box-shadow:0 9px 18px #294d9d30}
+#content.vs3910-studio .vs3910-kpi-featured .vs3910-kpi-value{color:#fff;font-size:38px!important}
+#content.vs3910-studio .vs3910-kpi-scoring{background:#eaf5f2;border-color:#d4e9e1}
+#content.vs3910-studio .vs3910-kpi-scoring .vs3910-kpi-value{color:#147456}
+#content.vs3910-studio .vs3910-overview>p.muted{margin:16px 0 0;font-size:11px;line-height:1.55}
+#content.vs3910-studio .vs3910-visual{margin-top:20px;border-top:1px solid #e4ebf7;padding-top:20px}
+#content.vs3910-studio .vs38-chart-title{font-size:15px;font-weight:850;color:#233c6b}
+#content.vs3910-studio .vs38-chart-row{gap:9px}
+#content.vs3910-studio .vs38-track{border-radius:999px;overflow:hidden;background:#e7edf8}
+#content.vs3910-studio .vs38-fill{border-radius:999px}
+#content.vs3910-studio .vs3910-ranking h3,#content.vs3910-studio .vs3910-compare h3{font-size:19px;letter-spacing:-.5px}
+#content.vs3910-studio .vs3910-ranking table,#content.vs3910-studio .vs3910-compare table{font-variant-numeric:tabular-nums}
+#content.vs3910-studio .vs3910-ranking th,#content.vs3910-studio .vs3910-compare th{background:#eaf1ff!important;color:#244780!important;font-weight:850;border-bottom:1px solid #d8e3f6!important}
+#content.vs3910-studio .vs3910-ranking td,#content.vs3910-studio .vs3910-compare td{border-bottom:1px solid #e9eef7!important}
+#content.vs3910-studio .vs3910-compare .vs392-scroll{border-radius:16px;border:1px solid #dce6f5}
+#content.vs3910-studio .vs3910-compare .vs392-table td:first-child{background:#f4f7fd}
+#content.vs3910-studio .vs3910-section-heading{font-size:21px;letter-spacing:-.6px;margin:27px 0 14px;color:#1d345f}
+#content.vs3910-studio .vs3910-player-detail{background:#fff;border-radius:18px;border:1px solid #dce5f3;padding:15px 17px}
+#content.vs3910-studio .vs3910-player-detail summary{font-weight:850;color:#244274;cursor:pointer;list-style-position:inside}
+#content.vs3910-studio .vs3910-player-detail[open]{border-color:#b7c9ee;box-shadow:0 7px 19px #2b4d9112}
+#content.vs3910-studio .vs3910-player-detail .item{background:#f3f7fd;border-radius:13px}
+#content.vs3910-studio .vs3910-fundamental{border-left:4px solid #5575d6!important}
+#content.vs3910-studio .vs3910-fundamental h3{font-size:18px}
+#content.vs3910-studio .vs3910-fundamental .item{background:#f1f6ff;border:1px solid #e0eafb}
+@media(max-width:390px){#content.vs3910-studio .vs3910-overview{padding:14px}#content.vs3910-studio .vs3910-kpi{padding:12px;min-height:94px}#content.vs3910-studio .vs3910-kpi-value{font-size:25px!important}#content.vs3910-studio .vs3910-kpi-featured .vs3910-kpi-value{font-size:32px!important}}
