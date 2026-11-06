@@ -1,0 +1,44 @@
+/* Volley Scout Beta 39.11 — Archive & Team Manager premium redesign */
+#content.vs3911-history,#content.vs3911-settings{--vs11-ink:#172c55;--vs11-line:#dae5f5;--vs11-blue:#3154d5}
+#content .vs3911-eyebrow{font-size:10px;font-weight:900;letter-spacing:.16em;color:#4565ad;margin:5px 0 11px;display:flex;align-items:center;gap:8px}
+#content .vs3911-eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:#2ac38f;box-shadow:0 0 0 4px #2ac38f25}
+#content.vs3911-history>.title,#content.vs3911-settings>.title{font-size:clamp(29px,7vw,36px);line-height:1.12;letter-spacing:-1.3px;margin-bottom:10px}
+#content.vs3911-history>.title+.muted{margin:0 0 21px;font-size:14px}
+#content .vs3911-history-count,#content .vs3911-team-count{display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,#1a346d,#2c54b0);color:#fff;padding:17px 19px;border-radius:20px;margin:15px 0 18px;box-shadow:0 12px 27px #1e438b27}
+#content .vs3911-history-count-number,#content .vs3911-team-count-number{font-size:36px;line-height:1;font-weight:950;letter-spacing:-1.5px}
+#content .vs3911-history-count-label,#content .vs3911-team-count-label{font-size:13px;font-weight:800;color:#dce7ff}
+#content.vs3911-history .vs3911-backup{border:1px solid #cfddf4;background:linear-gradient(150deg,#f5f9ff,#fff);box-shadow:0 8px 24px #2345750d;border-radius:21px}
+#content.vs3911-history .vs3911-backup-summary{font-size:15px;color:#234477;font-weight:900;list-style-position:inside}
+#content.vs3911-history .vs3911-backup #export{min-height:54px;border-radius:15px}
+#content.vs3911-history .vs3911-match-card{background:#fff;border:1px solid var(--vs11-line);border-radius:24px;padding:20px;box-shadow:0 11px 29px #23437512}
+#content.vs3911-history .vs3911-match-card:before{content:"";display:block;width:44px;height:4px;border-radius:9px;background:linear-gradient(90deg,#3b60e1,#27c49b);margin:0 0 17px}
+#content.vs3911-history .vs3911-match-header{margin-bottom:15px}
+#content.vs3911-history .vs3911-match-name{font-size:16px;font-weight:900;line-height:1.35;color:#193563}
+#content.vs3911-history .vs3911-match-header .pill{white-space:nowrap;background:#e8f0ff;border-color:#d7e5fc;color:#3158aa}
+#content.vs3911-history .vs3911-open-match{min-height:54px;border-radius:15px;font-size:15px;box-shadow:0 7px 17px #3155d72a}
+#content.vs3911-history .vs3911-match-detail{border-top:1px solid #e7edf7;padding-top:3px;margin-top:11px!important}
+#content.vs3911-history .vs3911-detail-summary{padding:12px 5px!important;color:#294774;font-size:13px;font-weight:850!important;line-height:1.45}
+#content.vs3911-history .vs3911-match-detail[open]>.vs3911-detail-summary{color:#2b52c0}
+#content.vs3911-history .vs3911-match-detail .grid{gap:8px}
+#content.vs3911-history .vs3911-match-detail button{min-height:46px;font-size:12px;border-radius:13px}
+#content.vs3911-history .vs3911-danger-section{border-top-color:#f2dce2}
+#content.vs3911-history .vs3911-danger-section>.vs3911-detail-summary{color:#a6384c}
+#content.vs3911-settings .vs3911-create-team{background:linear-gradient(155deg,#fff,#f4f8ff);border:1px solid #d4e1f6;border-radius:23px;padding:22px}
+#content.vs3911-settings .vs3911-card-eyebrow{font-size:10px;font-weight:900;letter-spacing:.15em;color:#4265ad;margin:0 0 11px}
+#content.vs3911-settings .vs3911-create-team h3{font-size:21px;letter-spacing:-.6px}
+#content.vs3911-settings .vs3911-create-team input{min-height:52px;background:#fff}
+#content.vs3911-settings .vs3911-create-team #add-team{min-height:55px;font-size:15px}
+#content.vs3911-settings .vs3911-team-card{border:1px solid #dce5f3;border-radius:24px;padding:20px;background:#fff;box-shadow:0 11px 28px #23457510}
+#content.vs3911-settings .vs3911-team-header{padding:0 0 15px;margin-bottom:14px;border-bottom:1px solid #e7edf7;align-items:flex-start}
+#content.vs3911-settings .vs3911-team-name{font-size:20px;font-weight:900;letter-spacing:-.65px;color:#183563;margin:0;overflow-wrap:anywhere;min-width:0}
+#content.vs3911-settings .vs3911-delete-team{flex-shrink:0;font-size:12px;min-height:42px;padding:9px 12px}
+#content.vs3911-settings .vs3911-team-card>.muted{font-weight:750;color:#4b6488}
+#content.vs3911-settings .vs3911-roster-item{border:1px solid #e2eaf6;background:#f5f8fd;border-radius:15px;padding:12px}
+#content.vs3911-settings .vs3911-roster-item .row{gap:8px}
+#content.vs3911-settings .vs3911-roster-item span{min-width:0;overflow-wrap:anywhere;font-weight:750;color:#244269}
+#content.vs3911-settings .vs3911-roster-item button{flex-shrink:0;min-height:40px;font-size:12px}
+#content.vs3911-settings .vs3911-subheading{font-size:17px;color:#1c3767;letter-spacing:-.4px;margin-top:24px!important;padding-top:16px;border-top:1px solid #e8eef8}
+#content.vs3911-settings .vs3911-team-select{background:#f5f8fe;border:1px solid #dce6f4;min-height:51px;font-weight:700;color:#28436b}
+#content.vs3911-settings .vs3911-save-button{min-height:50px;border-radius:15px;font-weight:850}
+#content.vs3911-settings .vs3911-team-card label{font-size:12px;font-weight:800;color:#465e82}
+@media(max-width:390px){#content.vs3911-history .vs3911-match-card,#content.vs3911-settings .vs3911-team-card,#content.vs3911-settings .vs3911-create-team{padding:15px;border-radius:20px}#content.vs3911-settings .vs3911-team-name{font-size:18px}#content .vs3911-history-count,#content .vs3911-team-count{padding:15px}}
