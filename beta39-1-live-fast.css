@@ -1,0 +1,12 @@
+/* Beta 39.1 Live: selected player clarity and quick-action emphasis */
+.vs391-live .vs391-player{display:flex;align-items:center;gap:12px;margin:10px 0 16px;padding:12px;border:1px solid #d8e4fc;border-radius:16px;background:#eef4ff}
+.vs391-player-number{display:grid;place-items:center;flex:none;min-width:54px;height:54px;padding:0 6px;border-radius:15px;background:#3756d9;color:white;font-size:21px;font-weight:900}
+.vs391-player-details{display:flex;flex-direction:column;gap:4px;min-width:0}
+.vs391-player-details strong{font-size:16px;overflow-wrap:anywhere}
+.vs391-player-details small{font-size:11px;color:#536a95;line-height:1.4}
+.vs391-live .vs391-tap-player{position:relative;border-width:2px;min-height:94px}
+.vs391-live .vs391-tap-player:active{border-color:#3856d7;box-shadow:0 0 0 3px #dce6ff}
+.vs391-live .vs391-next{outline:2px solid #b5c7ff;outline-offset:2px}
+.vs391-live .vs391-dismiss{min-height:47px}
+.vs391-live .quality{min-height:100px}
+@media(max-width:390px){.vs391-player-number{min-width:48px;height:48px}.vs391-live .quality{min-height:90px}}
