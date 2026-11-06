@@ -1,0 +1,11 @@
+/* Beta 39.2: responsive shared statistical comparisons */
+.vs392-card{border:1px solid #dfe8f8}
+.vs392-scroll{overflow:auto;max-width:100%;-webkit-overflow-scrolling:touch;border:1px solid #e5eaf5;border-radius:14px}
+.vs392-table{width:100%;min-width:980px;border-collapse:separate;border-spacing:0;font-size:12px;font-variant-numeric:tabular-nums}
+.vs392-table th,.vs392-table td{padding:11px 10px;text-align:left;white-space:nowrap;border-bottom:1px solid #e9edf6}
+.vs392-table th{background:#eaf0ff;color:#304a80;font-weight:800;position:sticky;top:0;z-index:1}
+.vs392-table td:first-child,.vs392-table th:first-child{position:sticky;left:0;background:#f7f9ff;z-index:2;max-width:180px;overflow:hidden;text-overflow:ellipsis}
+.vs392-table th:first-child{z-index:3;background:#eaf0ff}
+.vs392-table tr:nth-child(even) td:not(:first-child){background:#fafbfe}
+.vs392-table tbody tr:last-child td{border-bottom:0}
+@media(max-width:420px){.vs392-card{padding:13px}.vs392-table{font-size:11px}.vs392-table th,.vs392-table td{padding:9px 8px}}
